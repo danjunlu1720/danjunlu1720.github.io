@@ -56,10 +56,10 @@
 							<h4>December, 2019 - present</h4>
 							<div class="row">
 								<div class="col-9">
-									<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+									<p>Recently, I have some opportunities to use both SAS and python programming skills. It’s not a coincidence that these two languages have something in common. This research is trying to find a general formula for a one to one translation. Here is an example of SQL statements.</p>
 									<div class="table-wrapper">
 										<table>
+											<h3>Example: SQL statements</h3>
 											<thead>
 												<tr>
 													<th>SAS codes</th>
@@ -84,12 +84,12 @@
 													
 												</tr>
 												<tr>
-													<td>SELECT type,count(*) FROM airports<br />WHERE airports.iso_country = 'US' GROUPBY type;<br /></td>
+													<td>SELECT type,count(*) FROM airports<br />WHERE airports.iso_country = 'US' GROUP BY type;<br /></td>
 													<td>airports[airports.iso_country == 'US'].groupby('type').size().reset_index()</td>
 													
 												</tr>
 												<tr>
-													<td>SELECT type,count(*) AS size,min(id) AS id_min FROM airports WHERE airports.iso_country = 'US'<br />GROUPBY type HAVING count(*)>1000;</td>
+													<td>SELECT type,count(*) AS size,min(id) AS id_min FROM airports WHERE airports.iso_country = 'US'<br />GROUP BY type HAVING count(*)>1000;</td>
 													<td>airports[airports.iso_country == 'US'].groupby('type').filter(lambda x:len(x)>1000).groupby('type').agg(size = ('id','count'),id_min = ('id','min')).reset_index()</td>
 													
 												</tr>
@@ -102,8 +102,10 @@
 											</tfoot>
 										</table>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<p>References: <br />
+										&bull; <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sas.html">Pandas - Comparison with SAS</a><br />
+										&bull; <a href="https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e">How to rewrite your SQL queries in Pandas, and more</a>
+									</p>
 								</div>
 							</div>	
 						</div>
