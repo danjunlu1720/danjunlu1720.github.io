@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>Stock Price Movement Prediction with News Data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">LU,DANJUN</span>
 								</a>
 
 							<!-- Nav -->
@@ -52,13 +52,51 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Generic Page</h1>
-							<h4>November 1, 2015</h4>
+							<h1>Stock Price Movement Prediction with News Data</h1>
+							<h4>December 8, 2018</h4>
 							
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							
+							<p>The ubiquity of data today makes ingesting and interpreting useful data a big issue. However, given more reliable information, investors make better decisions. In this project, we implemented Machine Learning skills to improve traditional prediction methods for stock markets movement.</p>
+							<p>The project was derived from a challenge on <a href="https://www.kaggle.com/competitions">Kaggle competitions</a>, <a href="https://www.kaggle.com/c/two-sigma-financial-news#description"><em>Two Sigma: Using News to Predict Stock Movements</em></a>. The goal is to use market data and news data (Sentiment Analysis had been done already) to predict stock return movements (0 for negative returns and 1 for positive returns) for the next day.</p>
+							<p>Decent data sets are given which included both market stock data and organized news data. By implementing great data analysis methods and advanced ML techniques, our team achieved better scores on stock markets movement prediction with news.</p>
+							<p>The overall workflow is as follows:</p>
+							<div class="row">
+								<div class="col-3">	
+								</div>
+								<div class="col-6">
+									<span class="image fit"><img src="pj_images/stock4.png" alt="" /></span>
+								</div>
+								<div class="col-3">
+								</div>
+							</div>
+
+							<p>The image below showed quantiles for Stocks Returns. If you've already noticed, there were higher deviations during and after financial crisis (2008 to 2009). One challenge arising here was about deciding which period of data should be used for modeling.</p>
+
+							<div class="row">
+								<div class="col-3">	
+								</div>
+								<div class="col-6">
+									<span class="image fit"><img src="pj_images/stock1.png" alt="" /></span>
+								</div>
+								<div class="col-3">
+								</div>
+							</div>
+							<p>Light GBM takes in all the features as input and returns the importance of each features with respect to either feature number counts or gains. See the image below. It was useful to select proper representative features for modeling.</p>
+
+
+							<span class="image main"><img src="pj_images/stock2.png" alt="" /></span>
+
+							<p>After implementing several supervised machine learning for classification, we got the following conclusions. Among all the models, ANN performs the best. It has proper accuracy for testing set and runs faster than SVM.</p>
+							<div class="row">
+								<div class="col-3">	
+								</div>
+								<div class="col-6">
+									<span class="image fit"><img src="pj_images/stock3.png" alt="" /></span>
+								</div>
+								<div class="col-3">
+								</div>
+							</div>
+							
 						</div>
 					</div>
 
