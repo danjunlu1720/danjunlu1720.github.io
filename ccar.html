@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>CCAR</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">LU,DANJUN</span>
 								</a>
 
 							<!-- Nav -->
@@ -52,14 +52,28 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Generic Page</h1>
+							<h1>Comprehensive Capital Analysis and Review (CCAR)</h1>
 							<h4><span class="icon regular fa-calendar-alt"></span>&nbsp;November 10, 2017&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon solid fa-tags">SAS, DATA ANALYSIS, FINANCE.</span></h4>
 							
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-							
+							<p><strong>Comprehensive Capital Analysis and Review (CCAR)</strong> is a United States regulatory framework introduced by the Federal Reserve to assess, regulate, and supervise large banks and financial institutions– collectively referred to in the framework as bank holding companies (BHCs).<a href="https://en.wikipedia.org/wiki/Comprehensive_Capital_Analysis_and_Review">[1]</a></p>
+							<p>The main purpose of CCAR is to make sure that large banks whose total assets are larger than 50 million dollors set aside adequate capital for absorbing future losses. The banks should annually evaluate and report capital position under three supervisory scenarios - baseline, adverse, and severely adverse scenarios. </p>
+							<p>The goal of our project was to forecast a nine-quarter Expected Loss (ECL) (from Mar 2016 to Mar 2018) for a portfolio of mortgage loans from Fannie Mae (2009Q1) under three CCAR economic scenarios – Baseline, Adverse and Severely adverse.</p>
+							<p>Based on the formula:<br />
+								ECL = PD*LGD*EAD <br />
+								where LGD = Loss/EAD = 1 + (Cost-Proceeds)/EAD,</p>
+							<p>We implemented a logistic regression to estimate Probability of Default (PD) and two liner regressions to forecast Costs and Proceeds. The Exposure at Default (EAD) equaled to Unpaid Balance of the mortgages. Combined all the forecasting and calculation results together, we finally got the sum of ECL numbers by scenarios in nine quarters.</p>
+							<span class="image fit"><img src="pj_images/ccar1.png" alt="" /></span>
+							<div class="row">
+								<div class="col-4">
+									<span class="image fit"><img src="pj_images/ccar2.png" alt="" /></span>
+								</div>
+								<div class="col-4">
+									<span class="image fit"><img src="pj_images/ccar3.png" alt="" /></span>
+								</div>
+								<div class="col-4">
+									<span class="image fit"><img src="pj_images/ccar4.png" alt="" /></span>
+								</div>	
+							</div>	
 							<ul class="actions small">
 								<li><a href="projects.html" class="button small">&larr; Back</a></li>
 							</ul>
